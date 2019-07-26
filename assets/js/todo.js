@@ -20,6 +20,17 @@ $("input").keypress(function(event) {
     let newText = $(this).val();
     $(this).val("");
     //create a new li and make the text value
-    $("ul").append(`<li><span>X</span> ${newText}</li>`);
+    $("ul").append(
+      `<li><span><i class="fa fa-trash"></i></span> ${newText}</li>`
+    );
   }
+});
+
+$(".fa-plus-circle").click(function() {
+  let newText = $("input").val();
+  $("input").val("");
+  //create a new li and make the text value
+  $("ul").append(
+    `<li><span><i class="fa fa-trash"></i></span> ${newText}</li>`
+  );
 });
